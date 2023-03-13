@@ -8,9 +8,15 @@ import patternDesktop from "./images/pattern-divider-mobile.svg";
 const App = () => {
   const [advice, setAdvice] = useState("");
   const [id, setId] = useState("");
+  const [animate, setAnimate] = useState(false);
+
+  const animateHandler = () => {
+    setAnimate(!animate);
+  };
 
   const fetchQuote = async () => {
     try {
+      animateHandler();
       const response = await fetch("https://api.adviceslip.com/advice");
       const data = await response.json();
       setAdvice(data.slip.advice);
@@ -40,7 +46,9 @@ const App = () => {
           </div>
           <div
             onClick={fetchQuote}
-            className="flex items-center justify-center w-16 h-16 bg-neonGreen rounded-full absolute bottom-[-30px] cursor-pointer md:hover:shadow md:hover:drop-shadow-glow duration-200"
+            className={`flex items-center justify-center w-16 h-16 bg-neonGreen rounded-full absolute bottom-[-30px] cursor-pointer md:hover:shadow md:hover:drop-shadow-glow duration-200 ${
+              animate ? "translate-y-[-0.25rem]" : ""
+            } md:translate-y-0`}
           >
             <div>
               <img src={diceLogo} alt="" className="mx-auto" />
