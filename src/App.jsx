@@ -40,7 +40,7 @@ const App = () => {
           </div>
           <div
             onClick={fetchQuote}
-            className="flex items-center justify-center w-16 h-16 bg-neonGreen rounded-full absolute bottom-[-30px] cursor-pointer"
+            className="flex items-center justify-center w-16 h-16 bg-neonGreen rounded-full absolute bottom-[-30px] cursor-pointer hover:shadow hover:drop-shadow-glow duration-200"
           >
             <div>
               <img src={diceLogo} alt="" className="mx-auto" />

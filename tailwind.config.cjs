@@ -25,6 +25,9 @@ module.exports = {
       letterSpacing: {
         widest: ".3em",
       },
+      dropShadow: {
+        glow: "0 0 1em hsl(150, 100%, 66%)",
+      },
     },
   },
   plugins: [],
