@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/NIKO-DEV06/Todo-App)
-- Live Site URL: [Add live site URL here](https://todo-app-niko.netlify.app)
+- Solution URL: [Add solution URL here](https://github.com/NIKO-DEV06/Advice-Generator)
+- Live Site URL: [Add live site URL here](https://advise-generator-niko.netlify.app/)
 
 ## My process
 
