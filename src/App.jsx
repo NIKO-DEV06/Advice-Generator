@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 import diceLogo from "./images/icon-dice.svg";
 import patternDesktop from "./images/pattern-divider-mobile.svg";
+import Credit from "./components/credit";
 
 const App = () => {
   const [advice, setAdvice] = useState("");
@@ -56,6 +57,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      <Credit />
     </section>
   );
 };
