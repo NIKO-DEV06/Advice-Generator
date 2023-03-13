@@ -34,7 +34,7 @@ const App = () => {
   return (
     <section className=" h-screen w-screen bg-darkBlue">
       <div className="flex flex-col items-center justify-center h-[80%]">
-        <div className="relative flex flex-col items-center justify-top w-[343px] h-[345px] bg-darkGrayishBlue rounded-2xl">
+        <div className="relative flex flex-col items-center justify-top w-[343px] h-[345px] md:w-[35.5rem] bg-darkGrayishBlue rounded-2xl">
           <p className=" text-neonGreen tracking-[.2em] text-sm mt-[2.9875rem] mb-[1.5rem] ">
             ADVICE #{id}
           </p>
